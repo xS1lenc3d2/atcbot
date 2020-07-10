@@ -17,7 +17,7 @@ async def on_ready():
 	global role_list
 	print('Logged in as: '+client.user.name)
 	print('Bot ID: '+client.user.id)
-	await client.change_presence(game=discord.Game(name='Keep Silence')) 
+	await client.change_presence(game=discord.Game(name='Adopte Ton Crush')) 
 	print('------\n')
 	for server in client.servers:
 		role_list=dict((role.name,role) for role in server.roles)
@@ -47,4 +47,4 @@ async def send(ctx, *, content: str):
                 await client.say("DM can't Sent To : {} :x: ".format(member))
 
 
-client.run("YOUR BOT'S TOKEN HERE")                
+client.run("NzMwOTY3NTMxMTIwMjMwNDUy.XwfNOQ.5MBRSbeI26WliXgOFqCRTewViIEE")                
